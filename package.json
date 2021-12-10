@@ -1,0 +1,11 @@
+{
+  "name": "express-react-boilerplate",
+  "version": "1.0.0",
+  "description": "es6 node v17^ react v17^ parcel v2^ boilerplate",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan Babic",
+  "license": "MIT"
+}
