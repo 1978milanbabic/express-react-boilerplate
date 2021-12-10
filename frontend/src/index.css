@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f7f7f7;
+  z-index: 1;
+  position: relative;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* helpers */
+.clear:after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+
+.ui.grid.marginless {
+  margin: 0 !important;
+}
+
+.blankslate {
+  text-align: center;
+}
+
+.blankslate .ui.icon.header {
+  margin: 0;
+}
+
+/* react leaflet marker cluster */
+.leaflet-container .marker-cluster-small {
+  background-color: rgba(234, 32, 39, .5);
+  color: #fff;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 25px !important;
+  margin-top: -25px !important;
+  margin-left: -25px !important;
+}
+
+.leaflet-container .marker-cluster-small div {
+  background-color: rgba(234, 32, 39, 1.0);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 20px !important;
+  text-align: center;
+}
+
+.leaflet-container .marker-cluster span {
+  line-height: 38px;
+  font-size: 1.5rem;
+}
+
+/* ios input zoom fix */
+@supports (-webkit-overflow-scrolling: touch) {
+  select,
+  textarea,
+  input {
+    font-size: 16px !important;
+  }
+}
+
+/* modal fix */
+.ui.page.modals.transition.visible {
+  display: flex !important;
+  z-index: 1100;
+}
+.ui.page.modals.transition.visible .ui.modal {
+  margin-top: 0 !important;
+  position: relative;
+}
+
+/* attached menu + segment fix */
+.ui.menu.attached + .ui.segment.attached {
+  margin: 0 !important;
+}
+
+/* compact grid fix (https://github.com/Semantic-Org/Semantic-UI/issues/2968) */
+.ui.compact.grid {
+  margin: 0;
+}
+.ui.compact.grid .column {
+  padding: 0;
+}
+
+/* top menu without fixed */
+.ui.menu.top,
+.ui.menu.bottom {
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.ui.menu.top {
+  border-bottom: 1px solid #d4d4d5;
+}
+
+.ui.menu.bottom {
+  border-top: 1px solid #d4d4d5;
+}
+
+/* grid stacked first ui.header */
+@media only screen and (max-width: 767px) {
+  .ui.grid .row .column .ui.header:first-child {
+    margin-top: calc(2rem - 0.142857em);
+  }
+}

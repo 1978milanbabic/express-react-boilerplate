@@ -1,11 +1,37 @@
 {
   "name": "express-react-boilerplate",
   "version": "1.0.0",
-  "description": "es6 node v17^ react v17^ parcel v2^ boilerplate",
-  "main": "main.js",
+  "description": "module es6 node v17^ react v17^ parcel v2^ boilerplate",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "http-proxy-middleware": "^2.0.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "socket.io-client": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "parcel": "^2.0.1"
+  },
   "scripts": {
+    "start": "node main.js",
+    "dev:app": "nodemon main.js",
+    "dev:react": "parcel frontend/src/index.html",
+    "dev": "npm run dev:react & npm run dev:app",
+    "build": "parcel build frontend/src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Milan Babic",
-  "license": "MIT"
+  "license": "MIT",
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ]
 }

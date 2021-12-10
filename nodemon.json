@@ -1,0 +1,4 @@
+{
+  "verbose": false,
+  "ignore": ["*.test.js", "frontend/*", "public/*", ".parcel-cache/*", "dist/*"]
+}
