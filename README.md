@@ -1,8 +1,10 @@
 # express-react-boilerplate
+## ESM (modern module JavaScript)
 
 [![Standard - JavaScript Style Guide][standard-badge]][standard-url]
 
 - [express-react-boilerplate](#express-react-boilerplate)
+  - [ESM (modern module JavaScript)](#esm-modern-module-javascript)
   - [Usage](#usage)
   - [Commands](#commands)
     - [start](#start)
@@ -10,7 +12,12 @@
     - [build](#build)
   - [Environment variables](#environment-variables)
 
+Read more about Node ESM: https://nodejs.org/api/esm.html
+
 ## Usage
+
+This boilerplate uses modern ESM (module) JavaScript patern.
+
 
 To get started clone this repository and install npm dependencies:
 
@@ -26,19 +33,19 @@ $ npm run dev
 
 `node main.js`
 
-Start production server.
+* Starts production server.
 
 ### development
 
 `nodemon main.js & parcel index.html`
 
-Start node & react development servers.
+* Starts node & react development servers.
 
 ### build
 
 `parcel build index.html`
 
-Build react.
+* Builds react.
 
 ## Environment variables
 
